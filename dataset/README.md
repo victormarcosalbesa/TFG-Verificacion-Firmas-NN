@@ -15,6 +15,10 @@ El dataset se construyó a partir de firmas recogidas mediante una plantilla dis
 
 Debido a su tamaño, los archivos principales del dataset no se almacenan directamente en el repositorio, sino en la sección de **Releases**.
 
+```text
+v1.0-dataset
+```
+
 La release del dataset incluye:
 
 | Archivo                     | Descripción                                                         |
