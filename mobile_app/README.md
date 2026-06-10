@@ -31,10 +31,8 @@ La aplicación móvil no se almacena directamente en esta carpeta.
 
 El archivo instalable de la aplicación se encuentra disponible en la sección de **Releases** del repositorio.
 
-Ejemplo:
-
 ```text
-v1.0.0
+v1.0-aplicacion-movil
 ```
 
 Dentro de esa release se incluye el archivo APK generado desde Android Studio.
@@ -51,10 +49,6 @@ Para instalar la aplicación:
 
 ## Relación con el modelo
 
-La aplicación utiliza el modelo final entrenado durante el desarrollo del TFG.
+La aplicación utiliza el modelo `CNN_SGD_SinDropout` entrenado durante el desarrollo del TFG.
 
 Los modelos entrenados se encuentran documentados en la carpeta `models/` y disponibles en la sección de Releases del repositorio.
-
-## Nota
-
-Esta aplicación ha sido desarrollada con fines académicos como parte del Trabajo de Fin de Grado.
