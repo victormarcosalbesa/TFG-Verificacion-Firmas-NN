@@ -1,0 +1,11 @@
+torch
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+opencv-python
+Pillow
+PyMuPDF
+jupyter
+notebook
