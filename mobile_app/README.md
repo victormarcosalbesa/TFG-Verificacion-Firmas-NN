@@ -34,7 +34,7 @@ El archivo instalable de la aplicación se encuentra disponible en la sección d
 Ejemplo:
 
 ```text
-v1.0-aplicacion-movil
+v1.0.0
 ```
 
 Dentro de esa release se incluye el archivo APK generado desde Android Studio.
