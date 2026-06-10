@@ -97,9 +97,17 @@ Contiene el archivo `.apk` de la aplicación Android desarrollada para implement
 
 ### Modelos entrenados
 
+```text
+v1.0-modelos-entrenados
+```
+
 Contiene los modelos `.pt` entrenados durante el proyecto, incluyendo modelos CNN y MLP.
 
 ### Dataset
+
+```text
+v1.0-dataset
+```
 
 Contiene los archivos principales del dataset:
 
