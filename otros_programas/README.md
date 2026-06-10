@@ -31,17 +31,3 @@ El ejemplo se basa en un problema de regresión lineal bidimensional mal condici
 El notebook `ejemplo_de_convolucion.ipynb` aplica una operación de convolución sobre una imagen del dataset.
 
 En concreto, utiliza un filtro de detección de bordes Laplaciano y posteriormente aplica una operación de Max-Pooling, reduciendo el tamaño de la imagen. Este programa sirve para ilustrar de forma práctica operaciones habituales en redes neuronales convolucionales.
-
-## Uso
-
-Para ejecutar estos notebooks, se recomienda instalar previamente las dependencias del proyecto mediante:
-
-```bash
-pip install -r requirements.txt
-```
-
-Posteriormente, se pueden abrir los notebooks con Jupyter Notebook, JupyterLab o Google Colab.
-
-## Nota
-
-Estos programas tienen finalidad explicativa y complementaria. Su objetivo principal es apoyar la comprensión de conceptos teóricos y prácticos utilizados en el desarrollo del proyecto.
