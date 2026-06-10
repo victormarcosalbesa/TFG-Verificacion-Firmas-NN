@@ -89,6 +89,10 @@ Los archivos pesados del proyecto se encuentran disponibles en la sección de Re
 
 ### Aplicación móvil
 
+```text
+v1.0-aplicacion-movil
+```
+
 Contiene el archivo `.apk` de la aplicación Android desarrollada para implementar el modelo entrenado.
 
 ### Modelos entrenados
