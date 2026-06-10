@@ -6,15 +6,14 @@ Los resultados incluyen gráficas comparativas, métricas de rendimiento y una t
 
 ## Contenido de la carpeta
 
-En esta carpeta se incluyen cinco archivos principales:
+En esta carpeta se incluyen cuatro archivos principales:
 
 | Archivo                | Descripción                                                         |
 | ---------------------- | ------------------------------------------------------------------- |
-| `grafica_1.png`        | Primera gráfica generada durante el análisis de resultados.         |
-| `grafica_2.png`        | Segunda gráfica generada durante el análisis de resultados.         |
-| `grafica_3.png`        | Tercera gráfica generada durante el análisis de resultados.         |
-| `grafica_4.png`        | Cuarta gráfica generada durante el análisis de resultados.          |
-| `tabla_resultados.csv` | Tabla resumen con las métricas obtenidas por los modelos evaluados. |
+| `comparativa_barras.png`        | Gráfica comparativa de las diferentes métricas utilizadas para cada modelo.         |
+| `comparativa_global.png`        | Gráfica comparativa de error de entrenamiento y validación entre los distintos modelos de MLP y CNN.         |
+| `comparativa_subplots.png`        | Gráfica comparativa entre el error de entrenamiento y validación para cada modelo.         |
+| `comparativa biometrica.csv` | Tabla resumen con las métricas obtenidas por los modelos evaluados. |
 
 ## Descripción
 
