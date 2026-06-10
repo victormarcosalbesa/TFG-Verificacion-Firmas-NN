@@ -10,11 +10,11 @@ Se encuentran disponibles en la sección de Releases:
 
 | Modelo | Tipo | Descripción |
 |---|---|---|
-| `MLP_SGD_SinDropout.pt` | MLP | MMLP entrenada con el algoritmo SGD sin Dropout |
-| `cnn_augmentation.pt` | CNN | CNN entrenada con aumento de datos |
-| `cnn_dropout.pt` | CNN | CNN con regularización Dropout |
-| `cnn_final.pt` | CNN | Modelo final utilizado en la aplicación móvil |
-| `mlp_baseline.pt` | MLP | Modelo MLP inicial |
-| `mlp_dropout.pt` | MLP | MLP con Dropout |
-| `mlp_tuned.pt` | MLP | MLP con ajuste de hiperparámetros |
-| `mlp_final.pt` | MLP | Mejor modelo MLP obtenido |
+| `MLP_SGD_SinDropout.pt` | MLP | MLP entrenada con el algoritmo SGD sin Dropout |
+| `MLP_SGD_ConDropout.pt` | MLP | MLP entrenada con el algoritmo SGD con Dropout |
+| `MLP_Adam_SinDropout.pt` | MLP | MLP entrenada con el algoritmo Adam sin Dropout |
+| `MLP_Adam_ConDropout.pt` | MLP | MLP entrenada con el algoritmo Adam con Dropout |
+| `CNN_SGD_SinDropout.pt` | CNN | CNN entrenada con el algoritmo SGD sin Dropout |
+| `CNN_SGD_ConDropout.pt` | CNN | CNN entrenada con el algoritmo SGD con Dropout |
+| `CNN_Adam_SinDropout.pt` | CNN | CNN entrenada con el algoritmo Adam sin Dropout |
+| `CNN_Adam_ConDropout.pt` | CNN | CNN entrenada con el algoritmo Adam con Dropout |
