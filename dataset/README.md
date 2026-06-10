@@ -6,10 +6,10 @@ El dataset se construyó a partir de firmas recogidas mediante una plantilla dis
 
 ## Contenido de la carpeta
 
-| Archivo                   | Descripción                                                                                                               |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `plantilla_firmas.pdf`     | Plantilla utilizada para la recolección de firmas.                                                                        |
-| `extraccion_imagenes_dataset.ipynb` | Notebook utilizado para extraer automáticamente las firmas desde el PDF original y guardarlas como imágenes individuales. |
+| Archivo                   | Descripción                                                                                                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `plantilla_firmas.pdf`     | Plantilla utilizada para la recolección de firmas.                                                                                                         |
+| `extraccion_imagenes_dataset.ipynb` | Notebook utilizado para extraer automáticamente las firmas desde el PDF original, guardarlas como imágenes individuales y aplicar la inversión de colores. |
 
 ## Archivos disponibles en Releases
 
@@ -30,18 +30,23 @@ El proceso seguido para construir el dataset fue el siguiente:
 2. La plantilla fue rellenada manualmente con las firmas.
 3. Las hojas con firmas fueron agrupadas en un único documento PDF.
 4. Mediante el notebook `extraccion_imagenes_dataset.ipynb`, se extrajeron las firmas del PDF original y se guardaron como imágenes individuales.
-5. Las imágenes extraídas fueron procesadas posteriormente para construir el dataset final utilizado en el entrenamiento.
+5. El propio notebook aplica una inversión de colores sobre las imágenes extraídas.
+6. Las imágenes resultantes, con fondo negro y trazo blanco, forman el dataset final utilizado durante el entrenamiento.
 
-## Diferencia entre las imágenes extraídas y el dataset final
+## Transformación de las imágenes
 
-El notebook `extraccion_firmas.ipynb` extrae las firmas desde el PDF original y genera imágenes individuales con fondo blanco y trazo negro.
+Las firmas originales procedentes del PDF presentan fondo blanco y trazo negro.
 
-Sin embargo, el dataset final utilizado durante el entrenamiento no corresponde exactamente a esas imágenes extraídas directamente. Antes del entrenamiento, las imágenes fueron transformadas para presentar fondo negro y trazo blanco.
+Durante el procesamiento realizado en el notebook, se aplica una inversión de colores para obtener imágenes con:
 
-Por tanto:
+* Fondo negro.
+* Trazo blanco.
+* Formato individual por firma.
 
-* Las imágenes extraídas por el notebook son una versión intermedia del proceso.
-* El archivo `IMAGENES_DEF.zip` contiene la versión final utilizada para entrenar los modelos.
-* El dataset final presenta fondo negro y trazo blanco, formato empleado durante el entrenamiento de los modelos CNN y MLP.
+Este formato es el utilizado posteriormente para entrenar y evaluar los modelos CNN y MLP.
 
-Este material se proporciona con fines académicos dentro del Trabajo de Fin de Grado.
+## Dataset utilizado en el entrenamiento
+
+El archivo `IMAGENES_DEF.zip`, disponible en la release del dataset, contiene las imágenes finales utilizadas durante el entrenamiento de los modelos.
+
+Estas imágenes corresponden al resultado del proceso de extracción y transformación realizado sobre el PDF original de firmas.
