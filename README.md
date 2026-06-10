@@ -1,6 +1,6 @@
 # Redes neuronales aplicadas a la verificación de firmas manuscritas
 
-Este repositorio contiene el código, los resultados y los recursos asociados al Trabajo de Fin de Grado basado en la clasificación de imágenes de firmas mediante modelos de aprendizaje profundo.
+Este repositorio contiene el código, los resultados y los recursos asociados al Trabajo de Fin de Grado basado en la clasificación de imágenes de firmas manuscritas mediante modelos de aprendizaje profundo.
 
 El proyecto compara distintas arquitecturas de redes neuronales, principalmente modelos CNN y MLP, entrenadas sobre un dataset propio de imágenes de firmas. Además, se ha desarrollado una aplicación móvil Android que implementa el modelo entrenado.
 
@@ -23,6 +23,12 @@ El proyecto compara distintas arquitecturas de redes neuronales, principalmente 
 │   ├── Comparativa_Redes_Firmas.ipynb
 │   └── README.md
 │
+├── otros_programas/
+│   ├── README.md
+│   ├── comparativa_de_algoritmos_de_descenso.ipynb
+│   ├── ejemplo_de_convolucion.ipynb
+│   └── funciones_de_activacion.ipynb
+│
 ├── results/
 │   ├── README.md
 │   ├── comparativa_barras.png
@@ -37,7 +43,7 @@ El proyecto compara distintas arquitecturas de redes neuronales, principalmente 
 
 ## Descripción del proyecto
 
-El objetivo del proyecto es desarrollar y evaluar modelos capaces de clasificar imágenes de firmas. Para ello, se ha creado un dataset propio a partir de firmas recogidas mediante una plantilla diseñada específicamente para este trabajo.
+El objetivo del proyecto es desarrollar y evaluar modelos capaces de clasificar imágenes de firmas manuscritas. Para ello, se ha creado un dataset propio a partir de firmas recogidas mediante una plantilla diseñada específicamente para este trabajo.
 
 Posteriormente, las firmas fueron extraídas automáticamente desde un documento PDF y procesadas para obtener imágenes individuales con fondo negro y trazo blanco. Estas imágenes fueron utilizadas para entrenar y evaluar diferentes modelos de clasificación.
 
@@ -71,6 +77,13 @@ Los archivos pesados del dataset se encuentran disponibles en la sección de Rel
 
 Contiene las gráficas y la tabla de resultados obtenidas durante la evaluación de los modelos.
 
+Archivos incluidos:
+
+- `comparativa_barras.png`
+- `comparativa_global.png`
+- `comparativa_subplots.png`
+- `comparativa_biometrica.csv`
+
 ### `models/`
 
 Contiene la documentación relativa a los modelos entrenados.
@@ -82,6 +95,16 @@ Los archivos `.pt` de los modelos no se almacenan directamente en el repositorio
 Contiene la documentación relativa a la aplicación móvil Android desarrollada con Android Studio.
 
 El archivo instalable de la aplicación se encuentra disponible en la sección de Releases.
+
+### `otros_programas/`
+
+Contiene notebooks auxiliares desarrollados durante el trabajo. Estos programas no forman parte directamente del entrenamiento principal, pero sirven como apoyo para explicar y visualizar conceptos relacionados con las redes neuronales.
+
+Archivos incluidos:
+
+- `funciones_de_activacion.ipynb`: representación gráfica de distintas funciones de activación utilizadas en redes neuronales.
+- `comparativa_de_algoritmos_de_descenso.ipynb`: comparación de distintos algoritmos de descenso aplicados a un ejemplo de regresión lineal mal condicionado.
+- `ejemplo_de_convolucion.ipynb`: ejemplo práctico de convolución sobre una imagen del dataset, aplicando un filtro de detección de bordes y una operación de Max-Pooling.
 
 ## Releases
 
@@ -122,7 +145,7 @@ Para ejecutar los notebooks del proyecto, se recomienda crear un entorno de Pyth
 pip install -r requirements.txt
 ```
 
-El archivo `requirements.txt` contiene las librerías necesarias para ejecutar los notebooks principales del proyecto.
+El archivo `requirements.txt` contiene las librerías necesarias para ejecutar los notebooks principales y auxiliares del proyecto.
 
 ## Dependencias principales
 
@@ -138,6 +161,7 @@ El proyecto utiliza, entre otras, las siguientes librerías:
 - Pillow
 - PyMuPDF
 - Jupyter Notebook
+
 
 ## Autor
 
