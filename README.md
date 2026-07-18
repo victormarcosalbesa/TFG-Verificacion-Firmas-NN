@@ -38,6 +38,7 @@ El proyecto compara distintas arquitecturas de redes neuronales, principalmente 
 │
 ├── .gitignore
 ├── README.md
+├── TFG_Victor_2026.pdf
 └── requirements.txt
 ```
 
